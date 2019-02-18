@@ -1,0 +1,481 @@
+/*
+	Theme Name: Tableless 11 Anos
+	Theme URI: http://tableless.com.br
+	Description: Tema do Tableless 11 anos.
+	Author: Diego Eis
+	Version: 1.0
+*/
+@import url('fonts/fonts.css');
+@import url('fonts/icons/icons.css');
+@import url('css/content.css');
+@import url('css/footer.css');
+@import url('js/prettify/src/prettycss.css');
+
+* {
+	margin: 0;
+	padding: 0;
+	color: #1f1f1f;
+	box-sizing: border-box;
+}
+
+span {color: inherit;}
+img {max-width: 100%;}
+hr {display: none;}
+
+html {
+	font: 100%/100% SofiaRegular, Arial, Sans-serif;
+}
+
+.container {
+	width: 1266px;
+	margin-left: auto;
+	margin-right: auto;
+	padding: 0 15px;
+}
+.container:after {
+	content: "";
+	height: 0;
+	display: block;
+	overflow: hidden;
+	clear: both;
+}
+
+/***
+** HEADER
+***/
+.header {
+	background-color: #1f1f1f;
+	padding: 15px 10px;
+}
+
+.header .container {
+	position: relative;
+	overflow: hidden;
+}
+
+/** MENU **/
+.menu {
+	float: left;
+}
+.menu ul {display: none;}
+
+.menu span {
+	background-color: #f61b3a;
+	color: #FFF;
+	font: 0.75rem/0.75rem SofiaRegular, Times, Sans-serif;
+	text-transform: uppercase;
+	padding: 10px;
+	border-radius: 1px;
+	display: inline-block;
+	cursor: pointer;
+}
+
+.menu span:before {margin-right: 5px;}
+
+/** SEARCH **/
+.search {
+	float: left;
+	padding: 0 10px;
+}
+.search:before {
+	color: #FFF;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+.search .searchform {
+	width: 0;
+	height: 33px;
+	overflow: hidden;
+	vertical-align: middle;
+	display: inline-block;
+}
+
+.search.active .searchform {width: 300px;}
+
+.search .screen-reader-text {
+	width: 0px;
+	height: 0px;
+	vertical-align: middle;
+	display: inline-block;
+	overflow: hidden;
+}
+
+.search input[type="text"] {
+	padding: 10px;
+	width: 60%;
+	border: none;
+	border-radius: 1px;
+	vertical-align: middle;
+}
+
+.search input[type="submit"] {
+	background-color: #f61b3a;
+	padding: 10px;
+	border: none;
+	color: #fff;
+	vertical-align: middle;
+}
+
+/** LOGO **/
+.logo {
+	text-align: center;
+	width: 40%;
+	margin: auto;
+}
+
+.logo a {
+	display: block;
+	text-align: center;
+	text-indent: -9999px;
+	overflow: hidden;
+	background: url(images/logo-header.png) no-repeat center;
+	height: 30px;
+}
+
+/** SHARED **/
+
+/** Links Social Header **/
+.social-links {
+	position: absolute;
+	right: 0;
+	top: 8px;
+}
+
+.social-links li {display: inline; list-style: none;}
+
+.social-links li a {
+	display: inline-block;
+	width: 21px;
+	height: 21px;
+	background: url(images/social-icons.png) no-repeat;
+	margin-left: 10px;
+	opacity: 0.7;
+	text-indent: -9999px;
+	overflow: hidden;
+}
+.social-links li a:hover {opacity:1;}
+
+.social-links a.ico-twitter,
+.social-links li:nth-child(1) a {background-position: -50px center;}
+
+.social-links a.ico-facebook,
+.social-links li:nth-child(2) a {background-position: -90px center;}
+
+.social-links a.ico-rss,
+.social-links li:nth-child(3) a {background-position: -127px center;}
+
+.social-links li:nth-child(4) a {background-position: 0 center;}
+
+/*** MENU CATEGS ***/
+.second-menu {
+	background-color: #f3f2f1;
+	text-align: center;
+	clear: both;
+	display: block;
+	border-bottom: 1px solid #fff;
+}
+
+.second-menu ul {
+	padding: 15px 0;
+}
+
+.second-menu li {display: inline; list-style: none;}
+
+.second-menu li a {
+	font-size: .88rem;
+	padding-right: 30px;
+	color: #1f1f1f;
+	text-decoration: none;
+	text-transform: uppercase;
+}
+
+.second-menu li a:hover {
+	opacity: 0.7;
+}
+
+/***
+*** Feature post of home
+***/
+.highlight-home {
+	padding: 60px 0 50px;
+	text-align: center;
+	background: #f3f2f1;
+}
+
+.highlight-home h1 {
+	font: 4.5rem/4.5rem SofiaBold, sans-serif;
+	color: #1f1f1f;
+	padding-bottom: 45px;
+	max-width: 1000px;
+	margin: auto;
+}
+
+.highlight-home h1 a {
+	color: #1f1f1f;
+	text-decoration: none;
+}
+
+.highlight-home a {
+	opacity: 1;
+	transition: opacity .25s ease-in;
+}
+
+.highlight-home a:hover {
+	opacity: 0.7;
+}
+
+.post-time,
+.categ-name,
+.author-name {
+	text-decoration: none;
+	text-transform: uppercase;
+	padding-right: 25px;
+	font-size: 1.13rem;
+}
+
+.post-time {
+	font-family: SofiaLight;
+	color: #666;
+}
+
+.categ-name,
+.categ-name a {
+	font-family: SofiaMedium;
+	color: #292929;
+}
+
+.author-name,
+.author-name a {
+	font-family: SofiaLight;
+	color: #f61b3a;
+}
+
+.categ-name a,
+.author-name a {text-decoration: none;}
+
+.comments-number {
+	background: url(images/comment-img.png) no-repeat;
+	width: 23px;
+	height: 23px;
+	display: inline-block;
+	opacity: .2;
+	text-align: center;
+	transition: opacity .25s ease-in;
+}
+
+.comments-number a {
+	display: inline-block;
+	padding-top: 3px;
+	width: inherit;
+	height: inherit;
+	opacity: 1 !important;
+	color: #fff;
+	text-decoration: none;
+	text-align: center;
+	font: 0.69rem/0.69rem arial, tahoma, sans-serif;
+}
+
+.comments-number:hover {
+	opacity: 1 !important;
+}
+
+/***
+*** text intro
+***/
+.text-intro {
+	padding: 50px 0 60px;
+	text-align: left;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1)
+}
+
+.text-intro h1 {
+	font: 3.5rem/3.5rem SofiaBold, sans-serif;
+	color: #1f1f1f;
+	padding-bottom: 45px;
+	max-width: 100%;
+	margin: auto;
+}
+
+.text-intro h1 a {
+	color: #1f1f1f;
+	text-decoration: none;
+}
+
+.text-intro a {
+	opacity: 1;
+	transition: opacity .25s ease-in;
+}
+
+.text-intro a:hover {
+	opacity: 0.7;
+}
+
+.text-intro p {
+	font: 1.5rem/2.5rem SofiaLight, Arial, Sans-serif;
+}
+/***
+*** Lists of posts
+***/
+.line-posts {
+	border-bottom: 1px solid #e6e6e6;
+	text-align: center;
+	padding: 20px 0;
+}
+
+.line-posts > * {
+	text-align: left;
+}
+
+.line-posts > div {
+	display: inline-block;
+	vertical-align: top;
+	width: 25%;
+	min-height: 335px;
+	position: relative;
+	background: #fff;
+	transition: background .15s ease-in;
+	overflow: hidden;
+}
+
+.archive .line-posts > div,
+.category .line-posts > div {
+	width: 33%;
+}
+
+.line-posts div:hover {
+	background: rgba(241, 44, 73, .85);
+}
+
+.line-posts div:hover,
+.line-posts div:hover h3,
+.line-posts div:hover .post-time {color: #fff;}
+
+.line-posts div > a {
+	padding: 60px 30px 30px;
+	min-height: inherit;
+	text-decoration: none;
+	display: block;
+}
+
+.line-posts h3 {
+	padding-top: 30px;
+	color: #1f1f1f;
+	font: 2.34rem/3rem SofiaBold, sans-serif;
+}
+
+.line-posts .wp-post-image {
+	position: absolute;
+	top: 0;
+	left: 0;
+	z-index: -1;
+	max-width: 900px;
+	width: 680px;
+	height: auto;
+	display: none;
+}
+
+.line-posts > div:hover .wp-post-image {
+	display: block;
+}
+
+.categ-title {
+	width: 255px;
+	padding: 80px 10px 0 40px;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.categ-title a {
+	color: #f61b3a;
+	text-decoration: none;
+	font: 1.88rem/1.88rem SofiaLight, sans-serif;
+	text-transform: uppercase;
+}
+
+
+/***
+*** AUTHOR BIO
+***/
+#author {
+	background: #1f1f1f;
+	padding: 0 30px 30px;
+	color: #FFF;
+}
+
+#author img {
+	float: left;
+	border-top: 2px solid #eb181e;
+	margin-top: -2px;
+	margin-right: 20px;
+	margin-bottom: 180px;
+}
+
+#author h3 {
+	padding: 20px 0;
+	color: #fff;
+}
+
+#author a {text-decoration: none; color: #FFF;}
+
+#author p {
+	color: #FFF;
+	padding: 0 0 20px;
+	font-size: 1rem;
+	line-height: 1.8rem;
+}
+
+[class*="btn"] {
+	display: inline-block;
+	padding: 15px;
+	background-color: #06609f;
+	color: #fff;
+}
+
+/***
+*** CODE HIGHLIGHT
+***/
+.prettyprint {
+	padding: 15px 0;
+	margin-bottom: 40px;
+	overflow: auto;
+}
+.prettyprint ol {
+	margin: 0;
+	padding: 0 0 0 50px;
+}
+ol.linenums li {
+	padding-bottom: 3px;
+}
+ol.linenums li:hover {background-color: rgba(0,0,0,0.1);}
+
+ol.linenums li,
+.prettyprint span {font-size: .8rem !important; font-family: courier;}
+
+@media screen and (max-width: 930px) {
+	html {
+		font: 90%/90% SofiaRegular, Arial, Sans-serif;
+	}
+
+	.container {
+		width: 100%;
+	}
+
+	.line-posts > div {
+		display: block;
+		width: 100%;
+		text-align: center;
+		height: auto;
+		min-height: auto;
+	}
+
+	.line-posts div > a {
+		min-height: 150px !important;
+	}
+
+	.line-posts .wp-post-image {
+		width: auto;
+		height: auto;
+	}
+
+}

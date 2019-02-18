@@ -1,0 +1,39 @@
+@font-face {
+	font-family: 'SofiaBold';
+	src:url('MostardesignSofiaProBold.eot?-pdk0xy');
+	src:url('MostardesignSofiaProBold.eot?#iefix-pdk0xy') format('embedded-opentype'),
+		url('MostardesignSofiaProBold.woff?-pdk0xy') format('woff'),
+		url('MostardesignSofiaProBold.ttf?-pdk0xy') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SofiaLight';
+	src:url('MostardesignSofiaProLight.eot?-pdk0xy');
+	src:url('MostardesignSofiaProLight.eot?#iefix-pdk0xy') format('embedded-opentype'),
+		url('MostardesignSofiaProLight.woff?-pdk0xy') format('woff'),
+		url('MostardesignSofiaProLight.ttf?-pdk0xy') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SofiaMedium';
+	src:url('MostardesignSofiaProMedium.eot?-pdk0xy');
+	src:url('MostardesignSofiaProMedium.eot?#iefix-pdk0xy') format('embedded-opentype'),
+		url('MostardesignSofiaProMedium.woff?-pdk0xy') format('woff'),
+		url('MostardesignSofiaProMedium.ttf?-pdk0xy') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SofiaRegular';
+	src:url('MostardesignSofiaProRegular.eot?-pdk0xy');
+	src:url('MostardesignSofiaProRegular.eot?#iefix-pdk0xy') format('embedded-opentype'),
+		url('MostardesignSofiaProRegular.woff?-pdk0xy') format('woff'),
+		url('MostardesignSofiaProRegular.ttf?-pdk0xy') format('truetype');
+	font-weight: normal;
+	font-style: normal;
+}
